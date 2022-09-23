@@ -14,11 +14,13 @@ public class MainActivity extends BasicActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        binding.btnRvBasicUse.setOnClickListener(v ->
-                jumpActivity(RvBasicUseActivity.class));
-        findViewById(R.id.btn_rv_view_binding).setOnClickListener(v ->
-                jumpActivity(RvViewBindingActivity.class));
-        findViewById(R.id.btn_rv_data_binding).setOnClickListener(v ->
-                jumpActivity(RvDataBindingActivity.class));
+        //基本使用
+        binding.btnRvBasicUse.setOnClickListener(v -> jumpActivity(RvBasicUseActivity.class));
+        //结合ViewBinding使用
+        binding.btnRvViewBinding.setOnClickListener(v -> jumpActivity(RvViewBindingActivity.class));
+        //结合DataBinding使用
+        binding.btnRvDataBinding.setOnClickListener(v -> jumpActivity(RvDataBindingActivity.class));
+        //结合SwipeRefreshLayout使用
+        binding.btnRvRefreshLoad.setOnClickListener(v -> jumpActivity(RvRefreshLoadActivity.class));
     }
 }

@@ -40,7 +40,6 @@
         android:layout_marginEnd="16dp"
         android:text="RecyclerView + ViewBinding"
         android:textAllCaps="false"
-        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_rv_basic_use" />
@@ -53,8 +52,20 @@
         android:layout_marginEnd="16dp"
         android:text="RecyclerView + DataBinding"
         android:textAllCaps="false"
-        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_rv_view_binding" />
+
+    <Button
+        android:id="@+id/btn_rv_refresh_load"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="RecyclerView 下拉刷新 + 上拉加载"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_rv_data_binding" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
