@@ -13,6 +13,9 @@ import com.llw.recyclerviewdemo.listener.OnItemLongClickListener;
 
 import java.util.List;
 
+/**
+ * 基本使用
+ */
 public class RvBasicUseActivity extends BasicActivity {
 
     @Override

@@ -14,6 +14,9 @@ import com.llw.recyclerviewdemo.listener.OnItemLongClickListener;
 
 import java.util.List;
 
+/**
+ * 结合DataBinding使用
+ */
 public class RvDataBindingActivity extends BasicActivity {
 
     private ActivityRvDataBindingBinding binding;

@@ -22,5 +22,9 @@ public class MainActivity extends BasicActivity {
         binding.btnRvDataBinding.setOnClickListener(v -> jumpActivity(RvDataBindingActivity.class));
         //结合SwipeRefreshLayout使用
         binding.btnRvRefreshLoad.setOnClickListener(v -> jumpActivity(RvRefreshLoadActivity.class));
+        //适配器多布局使用
+        binding.btnRvMultipleLayouts.setOnClickListener(v -> jumpActivity(RvMultipleLayoutsActivity.class));
+        //多级列表使用
+        binding.btnRvMultilevelList.setOnClickListener(v -> jumpActivity(RvMultilevelListActivity.class));
     }
 }

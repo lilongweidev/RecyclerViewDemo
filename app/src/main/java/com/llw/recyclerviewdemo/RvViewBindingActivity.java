@@ -8,6 +8,9 @@ import com.llw.recyclerviewdemo.databinding.ActivityRvViewBindingBinding;
 
 import java.util.List;
 
+/**
+ * 结合ViewBinding使用
+ */
 public class RvViewBindingActivity extends BasicActivity {
 
     private ActivityRvViewBindingBinding binding;

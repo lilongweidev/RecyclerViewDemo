@@ -16,6 +16,9 @@ import com.llw.recyclerviewdemo.databinding.ActivityRvRefreshLoadBinding;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 结合SwipeRefreshLayout使用
+ */
 public class RvRefreshLoadActivity extends BasicActivity {
 
     private ActivityRvRefreshLoadBinding binding;
@@ -38,12 +41,13 @@ public class RvRefreshLoadActivity extends BasicActivity {
         strings.addAll(getStrings());
         //获取适配器实例
         BasicAdapter stringAdapter = new BasicAdapter(strings);
-        //配置适配器
-        binding.rvText.setAdapter(stringAdapter);
         final LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         //配置布局管理器
         binding.rvText.setLayoutManager(linearLayoutManager);
+        //配置适配器
+        binding.rvText.setAdapter(stringAdapter);
 
+        //添加刷新监听
         binding.refresh.setOnRefreshListener(() -> {
             strings.clear();
             strings.addAll(getStrings());
