@@ -104,4 +104,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_rv_multilevel_list" />
 
+    <Button
+        android:id="@+id/btn_rv_swipe_drag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="RecyclerView 左右滑动和上下拖动"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_rv_dynamically_change_data" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

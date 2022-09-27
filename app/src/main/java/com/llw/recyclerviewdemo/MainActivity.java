@@ -28,5 +28,7 @@ public class MainActivity extends BasicActivity {
         binding.btnRvMultilevelList.setOnClickListener(v -> jumpActivity(RvMultilevelListActivity.class));
         //动态更改数据
         binding.btnRvDynamicallyChangeData.setOnClickListener(v -> jumpActivity(RvDynamicallyChangeActivity.class));
+        //左右滑动和上下拖动
+        binding.btnRvSwipeDrag.setOnClickListener(v -> jumpActivity(RvSwipeDragActivity.class));
     }
 }
