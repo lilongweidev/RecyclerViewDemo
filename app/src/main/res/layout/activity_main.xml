@@ -92,4 +92,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_rv_multiple_layouts" />
 
+    <Button
+        android:id="@+id/btn_rv_dynamically_change_data"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="RecyclerView 动态更改数据"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_rv_multilevel_list" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

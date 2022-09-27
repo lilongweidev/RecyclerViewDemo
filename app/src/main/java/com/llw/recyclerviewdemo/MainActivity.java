@@ -26,5 +26,7 @@ public class MainActivity extends BasicActivity {
         binding.btnRvMultipleLayouts.setOnClickListener(v -> jumpActivity(RvMultipleLayoutsActivity.class));
         //多级列表使用
         binding.btnRvMultilevelList.setOnClickListener(v -> jumpActivity(RvMultilevelListActivity.class));
+        //动态更改数据
+        binding.btnRvDynamicallyChangeData.setOnClickListener(v -> jumpActivity(RvDynamicallyChangeActivity.class));
     }
 }

@@ -11,6 +11,7 @@ import com.google.android.material.appbar.MaterialToolbar;
 import com.llw.recyclerviewdemo.bean.BasicBean;
 import com.llw.recyclerviewdemo.bean.Group;
 import com.llw.recyclerviewdemo.bean.Message;
+import com.llw.recyclerviewdemo.bean.SelectBean;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -88,5 +89,17 @@ public class BasicActivity extends AppCompatActivity {
             groups.add(new Group("搞钱" + (i + 1) + "组", contacts));
         }
         return groups;
+    }
+
+    /**
+     * 获取选中数据列表
+     */
+    protected List<SelectBean> getSelects() {
+        List<SelectBean> selectBeans = new ArrayList<>();
+        int num = (int) (1 + Math.random() * (50 - 10 + 1));
+        for (int i = 0; i < num; i++) {
+            selectBeans.add(new SelectBean(false, "第 " + i + " 条数据"));
+        }
+        return selectBeans;
     }
 }
